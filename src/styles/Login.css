@@ -140,3 +140,37 @@
     height: 100vh;
     background: linear-gradient(to bottom right, #5a78fb, #fbfbfb);
 }
+.loading-message {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease; /* Animación de aparición */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  opacity: 0;
+  animation: fadeIn 0.9s ease forwards; /* Animación de aparición */
+}
+
+.show-error {
+  animation: fadeIn 0.5s ease forwards; /* Reinicia la animación cuando se muestra */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

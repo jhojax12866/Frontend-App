@@ -54,11 +54,14 @@ const Login = () => {
             required
           />
         </label>
-        {error && <div className="error-message">{error}</div>}
+        {isLoggingIn && <div className="loading-message">Iniciando sesión...</div>}
+        {error && <div className={`error-message ${error ? 'show-error' : ''}`}>{error}</div>}
         <button className="login-button" type="submit">Iniciar sesión</button>
       </form>
     </div>
   );
+  
+  
 };
 
 export default Login;
