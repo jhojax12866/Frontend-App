@@ -1,0 +1,22 @@
+
+
+.form-control {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 17px; /* Ajusta según sea necesario */
+    left: -10px; /* Ajusta según sea necesario */
+    background-color: white;
+    padding: 0 5px;
+    font-size: 0.8rem;
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  .select {
+    padding-top: 10px; /* Ajusta según sea necesario */
+  }
+  
