@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Select, MenuItem, Typography, Grid, FormControl, InputLabel } from '@mui/material';
+import { Button, Select, Typography, Grid, FormControl, InputLabel } from '@mui/material';
 import './styles/Fecha.css'; 
 
 function FormularioFecha() {
   const [year, setYear] = useState('');
   const [month, setMonth] = useState('');
 
-  const years = Array.from({ length: 50 }, (_, i) => String(2018 + i)); // Genera años desde 2022 hasta 2071
+  const years = Array.from({ length: 50 }, (_, i) => String(2018 + i)); // Genera años desde 2018 hasta 2067
 
   const handleSubmit = (e) => {
     e.preventDefault();
