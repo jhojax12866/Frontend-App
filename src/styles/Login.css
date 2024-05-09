@@ -1,0 +1,145 @@
+/* Estilos para el contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('https://www.example.com/path-to-cloud-image.png'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    position: relative; /* Permite posicionar otros elementos relativos a este contenedor */
+  }
+  
+  /* Estilos para la nube o elemento decorativo */
+  .cloud {
+    position: absolute; /* Posiciona el elemento de manera absoluta dentro del contenedor principal */
+    top: 20px; /* Ajusta la posición vertical */
+    left: 20px; /* Ajusta la posición horizontal */
+    width: 100px; /* Ajusta el tamaño */
+    height: auto;
+  }
+  
+  /* Estilos para el formulario */
+  .login-form {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    text-align: center; /* Centrar contenido */
+    animation: slideIn 0.5s ease; /* Animación de entrada */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para los campos de entrada */
+  .login-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  }
+  
+  /* Efecto al pasar el cursor sobre los campos de entrada */
+  .login-input:hover {
+    border-color: #007bff; /* Cambia el color del borde */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega sombra */
+  }
+  
+  /* Estilos para el mensaje de error */
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para el botón de inicio de sesión */
+  
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transición de color de fondo y escala */
+  }
+  
+  /* Estilos para el botón de inicio de sesión al pasar el cursor */
+  .login-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Escala del 105% al pasar el cursor */
+  }
+  
+  
+  /* Estilos para el logo */
+  .login-logo {
+    max-width: 150px; /* Ajusta el tamaño máximo según tus preferencias */
+    height: auto; /* Mantiene la proporción de aspecto */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto 20px; /* Centra la imagen horizontalmente y agrega un margen inferior */
+  }
+  
+/* Estilos para la frase de bienvenida */
+.welcome-message {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    position: relative; /* Permite posicionar elementos secundarios relativos a este elemento */
+    animation: pulse 1s infinite alternate; /* Animación de pulsación */
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Estilos para el mensaje de bienvenida al pasar el cursor */
+  .welcome-message:hover {
+    color: #007bff; /* Cambia el color al azul */
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Agrega sombra al texto */
+  }
+  /* Estilos para el mensaje de carga */
+.loading-message {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease; /* Animación de aparición */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* Estilos para la animación de fade-out */
+@keyframes fadeOut {
+    from {
+      opacity: 2;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
