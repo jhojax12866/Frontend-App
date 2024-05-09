@@ -26,7 +26,7 @@ const Login = () => {
   };
   
   if (isLoggedIn) {
-    return <Navigate to="/Inicio" />;
+    return <Navigate to="/FormularioFecha" />;
   }
 
   return (

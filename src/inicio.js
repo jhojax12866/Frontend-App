@@ -67,7 +67,10 @@ function Inicio() {
 
   return (
     <div className="Home">
-      <h1 className="title">Manejo de Cuentas - Tienda Tita</h1>
+      <div className="title-container">
+        <img src="/images/home.png" alt="Logo" />
+        <h1 className="title">Tienda Tita</h1>
+      </div>
       <form className="form" onSubmit={handleSubmit}>
         <label>
           Nombre:
