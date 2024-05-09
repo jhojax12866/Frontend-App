@@ -1,22 +1,61 @@
+/* Estilos para el contenedor principal */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #5a78fb, #fbfbfb);
+  position: relative; /* Añade posición relativa para poder posicionar la imagen */
+}
 
+/* Estilos para la imagen */
+.Fecha {
+  max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de aspecto */
+  position: absolute; /* Permite posicionar la imagen absolutamente */
+  top: -200px; /* Ajusta la posición vertical */
+  left: 50%; /* Centra la imagen horizontalmente */
+  transform: translateX(-50%); /* Centra la imagen horizontalmente */
+}
 
+/* Estilos para el contenido del formulario */
+.form-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 20px 9px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: slideIn 0.9s ease;
+  max-width: 300px; /* Limita el ancho del formulario */
+  width: 100%;
+  position: relative; /* Añade posición relativa */
+}
+
+/* Estilos para los campos de entrada */
 .form-control {
-    position: relative;
-    margin-bottom: 20px;
+  margin-bottom: 50px; /* Agrega un margen inferior para separar los form controls */
+}
+/* Estilos para el botón */
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .input-label {
-    position: absolute;
-    top: 17px; /* Ajusta según sea necesario */
-    left: -10px; /* Ajusta según sea necesario */
-    background-color: white;
-    padding: 0 5px;
-    font-size: 0.8rem;
-    color: #555;
-    font-size: 1.2rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .select {
-    padding-top: 10px; /* Ajusta según sea necesario */
-  }
-  
+}

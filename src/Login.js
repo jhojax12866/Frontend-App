@@ -30,7 +30,7 @@ const Login = () => {
   }
 
   return (
-    <div className="login-container">
+    <div className="container">
       <form className={`login-form ${isLoggingIn ? 'logging-in' : ''}`} onSubmit={handleSubmit}>
         <img src="/images/login.png" alt="Logo" className="login-logo" />
         <p className="welcome-message">Bienvenido, por favor inicia sesión</p>

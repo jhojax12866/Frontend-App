@@ -145,3 +145,11 @@
 .btn:hover {
   background-color: #55b5db;
 }
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #5a78fb, #007bff); /* Degradado de colores */
+  position: relative;
+}
